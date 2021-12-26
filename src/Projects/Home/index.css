@@ -1,0 +1,30 @@
+.home-parent{
+    height: 100vh;
+}
+.parts{
+    height: 100%;
+}
+.part1{
+    height: 100%;
+    width: 50%;
+    background: linear-gradient(90deg,#240b36,#c31432);
+}
+.part2{
+    height: 100%;
+    width: 50%;
+    background: linear-gradient(90deg,#021b79,#240b36);
+}
+
+.seperator{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+.seperator span{
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    font-size: 70px;
+    color: white;
+    font-weight: bold;
+}

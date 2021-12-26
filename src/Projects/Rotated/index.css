@@ -1,0 +1,38 @@
+.rotated-parent{
+    height: 100vh;
+    background-color: #2A2A2A;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.rotated-parent .row{
+    border: 5px solid white;
+    transform: rotate(15deg);
+}
+.rotated-parent h1{
+    color: #00FF88;
+    font-size: 70px;
+    border-bottom: 2px dashed white;
+    width: max-content;
+}
+p{
+    color: white;
+    font-size: 24px;
+}
+.rotated-parent p b{
+    color: #FFC107;
+}
+.rotated-text-part{
+    border-left: 5px solid #fff;
+    padding-left: 25px;
+}
+
+
+@media screen and (max-width : 600px){
+    .rotated-parent .row{
+        transform: rotate(0deg);
+        border: none;
+    }
+    .rotated-text-part{
+        margin-left: 20px;
+    }
+}

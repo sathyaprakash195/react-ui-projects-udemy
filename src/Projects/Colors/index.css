@@ -1,0 +1,71 @@
+.colors-container {
+  height: 100vh;
+  animation: container-animation 10s ease infinite;
+}
+.letter {
+  font-size: 100px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  -webkit-text-stroke: 1px black;
+}
+
+.letter0 {
+  animation: letter-anim ease 5s infinite;
+}
+.letter1 {
+  animation: letter-anim ease 8s infinite;
+}
+.letter2 {
+  animation: letter-anim ease 6s infinite;
+}
+.letter3 {
+  animation: letter-anim ease 4s infinite;
+}
+
+@keyframes letter-anim {
+  0% {
+    color: white;
+    font-size: 150px;
+    transform: rotate(-17deg);
+    
+  }
+  25% {
+    color: red;
+    font-size: 70px;
+    transform: rotate(-2deg);
+  }
+  50% {
+    color: greenyellow;
+    font-size: 200px;
+    transform: rotate(0deg);
+  }
+  75% {
+    color: cyan;
+    font-size: 120px;
+    transform: rotate(14deg);
+  }
+  100% {
+    color: darkblue;
+    font-size: 80px;
+    transform: rotate(-5deg);
+  }
+}
+
+@keyframes container-animation {
+  0% {
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  }
+  25% {
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+  }
+  50% {
+    background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+  }
+  75% {
+    background-image: linear-gradient(to top, #f43b47 0%, #453a94 100%);
+  }
+  100% {
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+  }
+}

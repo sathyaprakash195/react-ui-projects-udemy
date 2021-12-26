@@ -1,0 +1,37 @@
+.glowing-parent {
+  height: 100vh;
+  background-color: black;
+}
+
+.glowing-text-part {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.glowing-text-part h1 {
+  font-size: 100px;
+  text-align: center;
+  width: 100%;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.445);
+}
+
+.glowing-text-part:hover {
+    cursor: pointer;
+  color: rgba(255, 255, 255, 0.89) !important;
+  text-shadow: 2px 2px 15px !important;
+}
+
+@media screen and (max-width:600px){
+    .glowing-text-part h1 {
+        font-size: 60px;
+        text-align: center;
+        width: 100%;
+        -webkit-text-stroke: 1px rgba(255, 255, 255, 0.445);
+      }
+      
+
+}
+
+
